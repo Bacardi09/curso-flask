@@ -1,0 +1,6 @@
+Flask es un micro framework de python que ofrece lo necesario para
+construir aplicaciones web con flexibilidad y control.
+
+Tiene un diseño minimalista.
+Permite agregar extensiones según necesite el proyecto.
+
