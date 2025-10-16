@@ -1,0 +1,3 @@
+El día de hoy se importaron en flask los modulos
+request y jsonify para trabajar con decoradores y
+devolver requests de POST y archivos JSON
