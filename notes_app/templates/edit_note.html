@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear nueve nota</title>
-</head>
-<body>
-    <h1>Crear una nueva nota</h1>
+{% extends "base.html" %}
+{% block title %}Editar nota{% endblock %}
+{% block content %}
     <form method="POST">
 
         <label for="title">Título</label>
@@ -17,5 +11,4 @@
 
         <input type="submit" value="Guardar">
     </form>
-</body>
-</html>
+{% endblock %}
