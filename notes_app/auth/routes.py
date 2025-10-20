@@ -12,3 +12,9 @@ def login():
         else:
             flash("Usuario no existe", "error")
     return render_template("login.html")
+
+@auth_bp.route("/logout")
+def logout():
+    session.pop("user", None)
+    flash("Te has desconectado correctamente", "success")
+    return redirect(url_for("auth.login"))

@@ -4,7 +4,8 @@ from flask import (
     render_template,
     request,
     url_for,
-    flash
+    flash,
+    session,
     )
 from models import db, Note
 
@@ -12,6 +13,9 @@ notes_bp = Blueprint('notes', __name__)
 
 @notes_bp.route("/")
 def index():
+    if "user" not in session:
+        flash("Por favor, inicia sesión para ver tus notas", "error")
+        return redirect(url_for("auth.login"))
     notes = Note.query.all()
     return render_template("index.html", notes=notes)
 
