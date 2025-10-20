@@ -205,3 +205,6 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# O ignorar todos los archivos .sqlite
+*.sqlite
